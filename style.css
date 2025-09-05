@@ -1,0 +1,183 @@
+body{
+    /* text-align: center; */
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px 15px;
+    background-color: rgb(215, 247, 215);
+    min-width: 0;
+}
+main {
+     max-width: auto; 
+     width: 100%; 
+     margin: 0 auto;
+}
+.logo{
+    /* background-color: aqua; */
+    display: flex;
+    background-color: rgb(250, 250, 250);    
+}
+.logo img {
+    /* background-color: rgb(255, 217, 0); */
+  display: block;
+  margin-left: 0;    /* flush to the left */
+  margin-right: 10px; /* push everything else away */
+  width: 100px;
+  height: auto;
+  object-fit: contain;  /* avoids distortion */
+  /* display: inline-block; */
+    background-color: rgb(250, 250, 250);   
+}
+.title{
+     margin-left: auto; 
+
+}
+.navbar {
+    /* background-color: rgb(157, 255, 0); */
+    display: flex;
+    /* align-items: center; */
+    width: auto;
+    margin :auto ;
+    background-color: rgb(250, 250, 250);   
+}
+.nav-links {
+  display: flex;
+  gap: 60px;             /* spacing between links */
+  list-style: none;      /* removes bullets */
+  margin-left: auto;/* keep margin */
+  
+}
+nav {
+position: fixed;
+top: 0;
+left: 0;
+height: 40px;
+width: 100%;
+display: flex;
+align-items: center;
+/* background-color: rgb(215, 223, 231); */
+border-bottom: 1px solid rgb(140, 150, 160);
+}
+
+
+.flex-container {
+ display: flex;
+ /* flex-wrap: wrap;          /* ← autorise le retour à la ligne */
+/*  flex-direction: row;*/
+  /* justify-content: flex-start;
+  gap: :20px;
+  align-items: center;
+  height: auto; */
+display: flex;         /* put child sections side by side */
+  gap: 20px;             /* optional spacing between them */
+  align-items: flex-start; /* align at the top */
+      background-color: rgb(215, 247, 215); 
+} 
+    /* <!-- Use CSS Grid to create a multi-column layout for the main content area that collapses to a single column on mobile devices. */
+.article {
+background-color: teal;
+color: rgb(10, 3, 3);
+display: flex;
+justify-content: left;
+align-items: center;
+background-color: rgb(215, 247, 215);
+}
+.grid-container {
+  display: grid;
+ grid-template-columns: 1fr 1fr;   /* 2 equal columns */
+  grid-template-rows: auto auto auto; /* 3 rows, adjust height automatically */
+  gap: 20px; 
+      background-color: rgb(215, 247, 215);
+  /* background-color: lightgray; */
+}
+.grid-service {
+  display: flex;   /* activates flexbox */
+  gap: 0;       /* optional space between divs */   
+}
+
+/* Add media queries to adjust the layout and font sizes for different screen sizes (e.g., 600px and 1024px breakpoints).      --> */
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;    /* one column */
+  }
+}
+/* 3 colonnes en haut : about | services | image */
+.about,
+.services,
+.image {
+  flex: 1 1 30%;            /* environ 1/3 de largeur chacun */
+  min-width: 260px;         /* évite que ça devienne trop étroit */
+}
+.contact {
+  display:block;
+}
+.contact input,
+.contact button,
+.contact textarea {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;    /* makes them full width inside the container */
+  max-width: 300px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 15px;
+}
+/* L’image de droite prend la largeur de sa colonne et ne déborde pas */
+.image2 img {
+ max-width: 180px; 
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.services .nav-links {
+  display: flex;
+  flex-direction: column;   /* stack vertically */
+  gap: 1px;
+  list-style: none; 
+  padding: 0; 
+  /* margin: 0; */
+}
+.services .image2 img {
+  max-width: 200px;  /* ajuste la taille */
+  height: auto;
+  display: block;
+  margin-top :0px;
+}
+.services >div{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+@media (max-width: 600px) {
+  .services > div {
+    flex-direction: column;    /* one column */
+  }
+}
+.services-content {
+  display: grid;
+  flex-direction: column;
+  align-items: flex-start;        /* aligne en haut */
+  gap: 20px;
+}
+label {
+  display: block;          /* put each label on its own line */
+  margin-bottom: 5px;     
+  color: #080000;           
+  font-family: Arial, sans-serif;
+  font-size: 15px;;
+}
+button {
+  background-color: #4CAF50;       
+  color: white;                    
+  border: none;                    
+  padding: 12px 24px;             
+  font-size: 1rem;                 /* readable size */
+  font-weight: bold;
+  border-radius: 8px;              
+  cursor: pointer;                 /* pointer on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect */
+button:hover {
+  background-color: #45a049;       
+  transform: translateY(-2px);    
+}

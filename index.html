@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Recycle objects</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+     <!-- Skip link for keyboard users -->
+    <a class="skip-link" href="#main">Skip to main content</a>
+        <!--Added header section to index.html-->  
+        <header class="navbar">  
+            <!-- A company logo (use a placeholder image) -->
+            <div class="logo"> 
+                  <img src="./images/logo2.png" 
+                        alt="Green earth with a plant behind it"
+                        width="100" 
+                  />  
+                  <!--Added h1 to index.html-->  
+                  <h1 class="title">Cleaner Earth🌍healthier lives</h1>
+            </div>
+            <!-- a responsive navigation bar with links to “Home,” “About Us,” “Services,” and “Contact.” -->
+            <!-- Implement a responsive navigation bar using Flexbox that adjusts to smaller screen sizes. -->
+             <!-- Add role="navigation" to the navigation bar. -->
+               <!-- Use aria-label or aria-labelledby for labeling interactive elements where necessary. -->
+            <nav role="navigation" aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="#">About Us</a></li>
+                    <li><a class="nav-link" href="#services">Services</a></li>
+                    <li><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--Added main to index.html--> 
+        <main id="main">
+            <!--Added grid section to index.html--> 
+            <div class="grid-container">
+                <div class="article">
+                    <!--Added article section to index.html--> 
+                    <article>
+                        <h2> Protect nature today for a brighter tomorrow.</h2>
+                        <p id="text1">🌍 A cleaner Earth means healthier lives, fresher air, and a brighter future.<br>
+                        Every small action we take adds up, and one of the most powerful steps is recycling.<br>
+                        By giving new life to everyday materials ♻️ , we reduce waste, save natural resources, and protect wildlife.<br> <br>
+                        ✨ Together, recycling helps us create cleaner communities today and a sustainable planet for tomorrow.</p>
+                    </article>
+                </div>
+                <div class="image">
+                    <!-- Ensure that all images have meaningful alt text, and decorative images use alt="". -->
+                    <img  src="./images/SaveEarth.png" alt="a humain hand is giving water to the earth's hand. it's a very green picture">
+                </div>
+                <div class="image">
+                    <!-- Ensure that all images have meaningful alt text, and decorative images use alt="". -->
+                    <img  src="./images/SaveEarth2.png" alt="a small cristal earth is on greeny surface">
+                </div>
+                <div class="article">
+                    <!--Added article section to index.html--> 
+                    <article>
+                        <h2>✨ You love to keep your earth clean.</h2>
+                        <p id="text1">If you love to keep the Earth clean, every small action matters — from recycling to reducing waste.</p>
+                    </article>
+                </div>
+                <div class="article">
+                    <!--Added article section to index.html--> 
+                    <article>
+                        <h2>✨ Together we can restore our planet.</h2>
+                        <p id="text1">This picture reminds us that change begins with each of us, young and old, working hand in hand. Every tree planted, every piece of litter collected, and every mindful action brings us closer to a cleaner, greener future. 💚.</p>
+                    </article>
+                </div>
+                <div class="image">
+                    <!-- Ensure that all images have meaningful alt text, and decorative images use alt="". -->
+                    <img  src="./images/SaveOurPlanet.png" alt="a small cristal earth is on greeny surface">
+                </div>
+            </div>
+
+            <!-- Service section & flex container-->
+            <section class="flex-container" aria-labelledby="services-heading">              
+                <section class="services">
+                    <!--Added h2 to index.html-->  
+                    <h2 id="services-heading">Different services that we provide</h2>
+                    <div>
+                        <div class="grid-service">
+                            <ul class="nav-links">
+                                <li><a class="nav-link" href="#">Collect all plastics</a></li>
+                                <li><a class="nav-link" href="#">Collect all old furnitures</a></li>
+                                <li><a class="nav-link" href="#">Collect all clothes</a></li>
+                            </ul>    
+                        </div>     
+                        <div class="image2">
+                        <!-- Ensure that all images have meaningful alt text, and decorative images use alt="". -->
+                        <img  src="./images/recycle2.png" alt="lots of items that can be recycled">
+                        </div>
+                    </div>   
+                </section>  
+                <!-- about section --> 
+                <section class="about" aria-labelledby="aboutRec">
+                    <!--Added h2 to index.html-->  
+                    <h3 id="aboutRec">You want to<a href="https://www.epa.gov/recycle" target="_blank" rel="noopener noreferrer"> know more?</a></h3>
+                    <!-- here add a formula to send the message -->
+                    <img src="./images/recycle1.png" alt="Recycling symbol, made of green bottles caps ">
+                </section>         
+            </section> 
+             <!-- contact section -->
+            <section class="contact" aria-labelledby="contact-heading">
+                    <!--Added h2 to index.html-->  
+                    <h4 id="contact-heading">contact us</h4>
+                    
+                    <!-- Design forms with accessible labels and validation feedback: -->
+                     <form id="contact" aria-describedby="contact-help">
+                        <p id="contact-help">Fields marked * are required.</p>
+                        <!-- Use <label> elements associated with each form input. -->
+                        <label for="name"> Full Name *</label>
+                        <input id="name" type="text" required placeholder="Milou Newman" >
+                        <label for="email"> Email *</label>
+                        <input id="email" type="email" required placeholder="example@gmail.com">
+                        <label for="number"> Phone Number</label>
+                        <input id="number" type="number" placeholder="+(country code) 123456789">
+                        <label for="message"> Message *</label>
+                        <textarea id="message" name="message" required rows="5" cols="40" >write your messge here  </textarea>
+                        <button type="submit" aria-label="Submit contact form" disabled>Send</button>
+                    </form>
+            </section>            
+        </main>
+        <!--Added footer section to index.html-->              
+        <footer>
+          <p>&copy; 2025 My Company</p>
+        </footer>  
+    <!-- Include aria-live attributes for dynamically updating content, if applicable. -->
+<!-- Add aria-describedby for additional instructions or error messages. -->
+<!-- Ensure proper keyboard navigation and focus management for all interactive      -->
+       
+    </body>
+</html>
