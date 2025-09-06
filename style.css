@@ -99,8 +99,11 @@ background-color: rgb(215, 247, 215);
 /* Add media queries to adjust the layout and font sizes for different screen sizes (e.g., 600px and 1024px breakpoints).      --> */
 @media (max-width: 600px) {
   .grid-container {
-    grid-template-columns: 1fr;    /* one column */
+    grid-template-columns: 1fr;/* one column */
+    grid-template-rows: auto;    /* one row */
+
   }
+     .article, .image{   grid-area: auto}
 }
 /* 3 colonnes en haut : about | services | image */
 .about,
